@@ -1,0 +1,32 @@
+{
+  "detection_interval": 5,
+  "bandwidth_threshold_mbps": 100,
+  "risk_threshold": 30,
+  "enable_advanced_detection": true,
+  "enable_real_time_monitoring": false,
+  "monitoring_duration": 3600,
+  "archive_enabled": true,
+  "email_alerts_enabled": false,
+  "email_config": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "from_addr": "your_email@gmail.com",
+    "username": "your_email@gmail.com",
+    "password": "your_password",
+    "to_addr": "alert@example.com"
+  },
+  "network_monitoring": {
+    "check_lan_traffic": true,
+    "suspicious_port_ranges": [[30000, 65535], [10000, 20000]],
+    "high_bandwidth_threshold": 100
+  },
+  "process_monitoring": {
+    "scan_windows_services": true,
+    "check_kernel_drivers": true
+  },
+  "logging": {
+    "log_level": "INFO",
+    "max_log_size": 104857600,
+    "backup_count": 5
+  }
+}
